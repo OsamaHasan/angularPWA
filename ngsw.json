@@ -19,7 +19,10 @@
         "/runtime.e1755cb6fbfe69ec0939.js",
         "/styles.280e991c5992f8630bc9.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/.*"
+      ]
     },
     {
       "name": "assets",
@@ -39,7 +42,18 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "posts",
+      "patterns": [
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts"
+      ],
+      "strategy": "freshness",
+      "maxSize": 1,
+      "maxAge": 43200000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/5.c2421614f0e9a201264f.js": "7dd04172b63747c6aa6f6497af0199884c959b63",
     "/6.434116692a3ef732ae87.js": "2e070be75d48cec79ca560c2a201fbc109ec3c61",
