@@ -19,11 +19,7 @@
         "/runtime.e1755cb6fbfe69ec0939.js",
         "/styles.280e991c5992f8630bc9.css"
       ],
-      "patterns": [
-        "https:\\/\\/peaceful-panini-4ece58\\.netlify\\.app\\/",
-        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto",
-        "https:\\/\\/fonts\\.gstatic\\.com\\/.*"
-      ]
+      "patterns": []
     },
     {
       "name": "assets",
@@ -45,23 +41,18 @@
   ],
   "dataGroups": [
     {
-      "name": "posts",
+      "name": "api-performance",
       "patterns": [
-        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts"
+        "https:\\/\\/peaceful-panini-4ece58\\.netlify\\.app\\/.*",
+        "https:\\/\\/mpapp\\.dairylife\\.com\\.pk:4042\\/connect\\/.*",
+        "https:\\/\\/mpapp\\.dairylife\\.com\\.pk:4042\\/authentication\\/.*",
+        "https:\\/\\/mpapp\\.dairylife\\.com\\.pk:4042\\/_configuration\\/.*",
+        "https:\\/\\/mpapp\\.dairylife\\.com\\.pk:4042\\/\\.well-known\\/.*",
+        "https:\\/\\/mpapp\\.dairylife\\.com\\.pk:4042\\/api\\/.*"
       ],
       "strategy": "freshness",
-      "maxSize": 1,
-      "maxAge": 43200000,
-      "version": 1
-    },
-    {
-      "name": "tags",
-      "patterns": [
-        "https:\\/\\/conduit\\.productionready\\.io\\/api\\/tags"
-      ],
-      "strategy": "freshness",
-      "maxSize": 1,
-      "maxAge": 43200000,
+      "maxSize": 100,
+      "maxAge": 176400000,
       "version": 1
     }
   ],
