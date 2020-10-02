@@ -53,6 +53,16 @@
       "maxSize": 1,
       "maxAge": 43200000,
       "version": 1
+    },
+    {
+      "name": "tags",
+      "patterns": [
+        "https:\\/\\/conduit\\.productionready\\.io\\/api\\/tags"
+      ],
+      "strategy": "freshness",
+      "maxSize": 1,
+      "maxAge": 43200000,
+      "version": 1
     }
   ],
   "hashTable": {
